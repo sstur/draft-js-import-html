@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sstur/draft-js-import-html#readme",
   "dependencies": {
-    "draft-js-import-element": "^0.1.2"
+    "draft-js-import-element": "^0.1.4"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
