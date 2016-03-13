@@ -8,10 +8,10 @@
     "lint": "eslint --max-warnings 0 .",
     "prepublish": "npm run build",
     "test": "npm run lint && npm run test-src",
-    "test-src": "mocha src/__tests__/*.js src/**/__tests__/*.js"
+    "test-src": "mocha"
   },
   "dependencies": {
-    "draft-js-import-element": "^0.1.4"
+    "draft-js-import-element": "^0.1.5"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
