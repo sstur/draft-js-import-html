@@ -11,7 +11,7 @@
     "test-src": "mocha"
   },
   "dependencies": {
-    "draft-js-import-element": "^0.1.5"
+    "draft-js-import-element": "^0.1.7"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
