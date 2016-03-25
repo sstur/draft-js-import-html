@@ -41,6 +41,16 @@
     "import-html"
   ],
   "author": "sstur@me.com",
+  "contributors": [
+    {
+      "name": "Laura Knight",
+      "url": "https://github.com/ljknight"
+    },
+    {
+      "name": "Simon Sturmer",
+      "url": "https://github.com/sstur"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sstur/draft-js-import-html/issues"
