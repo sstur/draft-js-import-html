@@ -6,8 +6,9 @@
   "scripts": {
     "build": "babel src --ignore '_*' --out-dir lib",
     "lint": "eslint --max-warnings 0 .",
+    "typecheck": "flow",
     "prepublish": "npm run build",
-    "test": "npm run lint && npm run test-src",
+    "test": "npm run lint && npm run typecheck && npm run test-src",
     "test-src": "mocha src/__tests__/*.js src/**/__tests__/*.js"
   },
   "dependencies": {
@@ -29,6 +30,7 @@
     "eslint-plugin-flow-vars": "^0.3.0",
     "eslint-plugin-react": "^4.3.0",
     "expect": "^1.16.0",
+    "flow-bin": "^0.23.0",
     "jsdom": "^8.4.0",
     "mocha": "^2.4.5",
     "react": "^15.0.1",
