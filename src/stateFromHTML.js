@@ -5,7 +5,7 @@ import parseHTML from './parseHTML';
 
 import type {ContentState} from 'draft-js';
 
-export default function stateFromHTML(html: string): ContentState {
+export default function stateFromHTML(html: string, options?: Object): ContentState {
   let element = parseHTML(html);
-  return stateFromElement(element);
+  return stateFromElement(element, options);
 }
