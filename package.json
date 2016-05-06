@@ -1,6 +1,6 @@
 {
   "name": "draft-js-import-html",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "DraftJS: Import HTML to ContentState",
   "main": "lib/main.js",
   "scripts": {
