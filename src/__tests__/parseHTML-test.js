@@ -12,8 +12,13 @@ describe('parseHTML', () => {
     });
     it('should have the correct child nodes', () => {
       expect(element.childNodes.length).toBe(1);
-      expect(element.firstChild.nodeName).toBe('P');
-      expect(element.firstChild.firstChild.nodeValue).toBe('Hello World');
+      // These null checks are to make Flow happy.
+      expect(element.firstChild && element.firstChild.nodeName).toBe('P');
+      expect(
+        element.firstChild &&
+        element.firstChild.firstChild &&
+        element.firstChild.firstChild.nodeValue
+      ).toBe('Hello World');
     });
   });
 
@@ -24,10 +29,15 @@ describe('parseHTML', () => {
       expect(element.nodeType).toBe(1);
     });
     it('should have the correct child nodes', () => {
-      expect(element.childNodes.length).toBe(2);
-      expect(element.firstChild.nodeName).toBe('P');
-      expect(element.lastChild.nodeName).toBe('DIV');
-      expect(element.firstChild.firstChild.nodeName).toBe('STRONG');
+      // These null checks are to make Flow happy.
+      expect(element.childNodes && element.childNodes.length).toBe(2);
+      expect(element.firstChild && element.firstChild.nodeName).toBe('P');
+      expect(element.lastChild && element.lastChild.nodeName).toBe('DIV');
+      expect(
+        element.firstChild &&
+        element.firstChild.firstChild &&
+        element.firstChild.firstChild.nodeName
+      ).toBe('STRONG');
     });
   });
 });
