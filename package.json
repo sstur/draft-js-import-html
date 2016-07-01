@@ -12,7 +12,7 @@
     "test-src": "mocha src/__tests__/*.js src/**/__tests__/*.js"
   },
   "dependencies": {
-    "draft-js-import-element": "^0.2.0"
+    "draft-js-import-element": "^0.3.0"
   },
   "peerDependencies": {
     "draft-js": ">=0.5.0",
