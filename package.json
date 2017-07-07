@@ -19,6 +19,7 @@
     "immutable": "3.x.x"
   },
   "devDependencies": {
+    "@types/draft-js": "^0.7.33",
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
     "babel-eslint": "^7.0.0",
@@ -41,10 +42,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/sstur/draft-js-import-html.git"
   },
-  "keywords": [
-    "draft-js",
-    "import-html"
-  ],
+  "keywords": ["draft-js", "import-html"],
   "author": "sstur@me.com",
   "contributors": [
     {
