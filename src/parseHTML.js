@@ -1,5 +1,5 @@
 /* @flow */
-
+var DOMParser = require('dom-parser');
 export default function parseHTML(html: string): Element {
   let doc;
   if (typeof DOMParser !== 'undefined') {
