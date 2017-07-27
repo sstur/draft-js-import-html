@@ -12,10 +12,10 @@
     "test-src": "mocha \"src/**/__tests__/*.js\""
   },
   "dependencies": {
-    "draft-js-import-element": "^0.4.1"
+    "draft-js-import-element": "^0.5.0"
   },
   "peerDependencies": {
-    "draft-js": ">=0.5.0",
+    "draft-js": ">=0.10.0",
     "immutable": "3.x.x"
   },
   "devDependencies": {
